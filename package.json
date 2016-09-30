@@ -13,23 +13,15 @@
   ],
   "private": true,
   "activationEvents": [
-    "onLanguage:javascriptreact",
-    "onLanguage:javascript",
-    "onLanguage:flow"
+    "onLanguage:flow",
+    "onLanguage:javascript"
   ],
   "main": "./build/flowMain",
   "contributes": {
     "languages": [
       {
         "id": "flow",
-        "firstLine": "^\\/\\*\\* @flow \\*\\/$",
-        "aliases": [
-          "Flow"
-        ]
-      },
-      {
-        "id": "flow",
-        "firstLine": "^[\"|']use babel[\"|'];$",
+        "firstLine": "^.*@flow.*",
         "aliases": [
           "Flow"
         ]
@@ -38,11 +30,6 @@
     "grammars": [
       {
         "language": "flow",
-        "scopeName": "source.js.jsx",
-        "path": "./syntaxes/Babel Language.json"
-      },
-      {
-        "language": "javascript",
         "scopeName": "source.js.jsx",
         "path": "./syntaxes/Babel Language.json"
       },
